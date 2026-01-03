@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://cnef1thnt341o"]
+
+[ext_resource type="Script" uid="uid://bcaukyj5l0thf" path="res://Features/Weapons/Weapon.gd" id="1_cu7qs"]
+[ext_resource type="PackedScene" uid="uid://ckietkinj14ns" path="res://Features/Weapons/Models/FireKatana.tscn" id="1_tsk2r"]
+
+[resource]
+script = ExtResource("1_cu7qs")
+model = ExtResource("1_tsk2r")
+position = Vector3(-0.008, 0.019, 0.024)
+rotation = Vector3(0, -90, 120)
+scale = Vector3(0.1, 0.1, 0.1)
+metadata/_custom_type_script = "uid://bcaukyj5l0thf"
