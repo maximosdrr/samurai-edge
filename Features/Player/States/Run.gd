@@ -1,11 +1,11 @@
 extends State
 
-class_name PlayerIdleState
+class_name PlayerRunState
 @export var animation_player: AnimationPlayer
 @export var player: CharacterBody3D
 
 func _init() -> void:
-	self.type = State.Type.IDLE
+	self.type = State.Type.RUN
 
 func physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("parry"):
@@ -13,9 +13,8 @@ func physics_process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("attack"):
 		state_machine.change_state(State.Type.ATTACK, {})
-		
-	if player.velocity.length() > 0.01:
-		state_machine.change_state(State.Type.RUN, {})
+	if is_zero_approx(player.velocity.length()):
+		state_machine.change_state(State.Type.IDLE, {})
 	
 func enter(metadata: Dictionary[Variant, Variant]):
-	animation_player.play("Idle", 0.2)
+	animation_player.play("Run", 0.2)

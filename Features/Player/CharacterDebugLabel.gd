@@ -9,5 +9,8 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	var _text = "Pivot Rotation: %s" % [deg_to_rad(camera_pivot.rotation.y)]
+	var _text = "Current State: %s\nPrevious State: %s" % [
+		player.state_machine.current.name,
+		player.state_machine.previous.name,
+	]
 	text = _text

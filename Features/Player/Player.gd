@@ -2,8 +2,10 @@ extends CharacterBody3D
 
 var status = PlayerStatus.new()
 
+@export var camera: Camera3D
 @export var camera_pivot: CameraPivot
 @export var model: Node3D
+@export var state_machine: StateMachine
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -20,8 +22,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction.x * status.speed
 		velocity.z = direction.z * status.speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, status.speed * delta)
-		velocity.z = move_toward(velocity.z, 0, status.speed * delta)
+		velocity.x = move_toward(velocity.x, 0, status.speed)
+		velocity.z = move_toward(velocity.z, 0, status.speed)
 
 	move_and_slide()
 
