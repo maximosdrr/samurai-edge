@@ -2,23 +2,24 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xbwxyo5espoc"
-path="res://.godot/imported/mystical_ember_blade_4.png-1086c7061a75209c26f1e11733f2917a.ctex"
+uid="uid://bna5rwhwnya4p"
+path.s3tc="res://.godot/imported/mystical_ember_blade_5.png-3ccf874c6469c328853eeba770e269ff.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
-"md5": "7722623ce3fc329d925abe1855c54ccc"
+"md5": "5ef33976ecac38b4b810d68e4dacce62"
 }
 
 [deps]
 
-source_file="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_4.png"
-dest_files=["res://.godot/imported/mystical_ember_blade_4.png-1086c7061a75209c26f1e11733f2917a.ctex"]
+source_file="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_5.png"
+dest_files=["res://.godot/imported/mystical_ember_blade_5.png-3ccf874c6469c328853eeba770e269ff.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

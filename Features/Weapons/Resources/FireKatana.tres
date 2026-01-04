@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("1_cu7qs")
+weapon_name = "FireKatana"
 model = ExtResource("1_tsk2r")
 position = Vector3(-0.008, 0.019, 0.024)
 rotation = Vector3(0, -90, 120)

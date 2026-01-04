@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://bdy0xlvun2ob2"]
+[gd_scene load_steps=24 format=4 uid="uid://bdy0xlvun2ob2"]
 
 [ext_resource type="Script" uid="uid://cykeo1rc1o8d2" path="res://Features/Player/Player.gd" id="1_3qydi"]
 [ext_resource type="Script" uid="uid://m364wspxgfen" path="res://Features/Player/Camera.gd" id="2_llsyq"]
@@ -10,7 +10,8 @@
 [ext_resource type="Script" uid="uid://b1tuv4yjg1a2a" path="res://Features/Player/States/Attack.gd" id="8_yu112"]
 [ext_resource type="Script" uid="uid://calpynvdisejv" path="res://Features/Player/States/Parry.gd" id="9_o4yob"]
 [ext_resource type="Script" uid="uid://cpsnhkoxy3lps" path="res://Features/Weapons/WeaponController.gd" id="10_m56yf"]
-[ext_resource type="Resource" uid="uid://cnef1thnt341o" path="res://Features/Weapons/Resources/FireKatana.tres" id="11_u4cwe"]
+[ext_resource type="Resource" uid="uid://bic0nfh58qobo" path="res://Features/Weapons/Resources/BlackKatana.tres" id="12_80ucd"]
+[ext_resource type="Script" uid="uid://deah0ua10i5j7" path="res://Features/Player/__Development/ChangeWeapon.gd" id="13_80ucd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71614"]
 resource_name = "basicRig:Skin.001"
@@ -2313,8 +2314,13 @@ metadata/_custom_type_script = "uid://calpynvdisejv"
 
 [node name="Components" type="Node" parent="."]
 
-[node name="WeaponController" type="Node" parent="Components" node_paths=PackedStringArray("model_parent")]
+[node name="WeaponController" type="Node" parent="Components" node_paths=PackedStringArray("model_parent", "state_machine")]
 script = ExtResource("10_m56yf")
-weapon_resource = ExtResource("11_u4cwe")
+weapon_resource = ExtResource("12_80ucd")
 model_parent = NodePath("../../CameraPivot/Model3D/basicRig/Skeleton3D/BoneAttachment3D")
+state_machine = NodePath("../../StateMachine")
 metadata/_custom_type_script = "uid://cpsnhkoxy3lps"
+
+[node name="__DevChangeWeapon" type="Node" parent="Components"]
+script = ExtResource("13_80ucd")
+metadata/_custom_type_script = "uid://deah0ua10i5j7"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://bic0nfh58qobo"]
+
+[ext_resource type="Script" uid="uid://bcaukyj5l0thf" path="res://Features/Weapons/Weapon.gd" id="1_ljl1c"]
+[ext_resource type="PackedScene" uid="uid://258jwi4c5i1o" path="res://Features/Weapons/Models/BlackKatana.tscn" id="1_ol0b8"]
+
+[resource]
+script = ExtResource("1_ljl1c")
+weapon_name = "BlackKatana"
+model = ExtResource("1_ol0b8")
+position = Vector3(0.007, 0.004, 0.003)
+rotation = Vector3(0, 90, 160)
+scale = Vector3(0.003, 0.003, 0.003)
+metadata/_custom_type_script = "uid://bcaukyj5l0thf"

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djpol28b0qymi"
-path.s3tc="res://.godot/imported/mystical_ember_blade_1.png-25eeebd26cdeb72d530df00b66c48cd7.s3tc.ctex"
+uid="uid://ddx7ydmsj6a6x"
+path.s3tc="res://.godot/imported/mystical_ember_blade_6.png-79a5ead764bfe98af71a84ebb4d10af0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "94b733c8852b298f829df7ada9272c00"
+"md5": "0c329f21ff67ca42722d8402747590a5"
 }
 
 [deps]
 
-source_file="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_1.png"
-dest_files=["res://.godot/imported/mystical_ember_blade_1.png-25eeebd26cdeb72d530df00b66c48cd7.s3tc.ctex"]
+source_file="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_6.png"
+dest_files=["res://.godot/imported/mystical_ember_blade_6.png-79a5ead764bfe98af71a84ebb4d10af0.s3tc.ctex"]
 
 [params]
 

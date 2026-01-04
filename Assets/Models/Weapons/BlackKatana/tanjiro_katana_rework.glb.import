@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dfopto8tlksy7"
-path="res://.godot/imported/mystical_ember_blade.glb-75578af6ca4bb629fe0f33ec2b835021.scn"
+uid="uid://cjans57lvm2em"
+path="res://.godot/imported/tanjiro_katana_rework.glb-c55353975f2ba2b3c198cbc94f3ce2e6.scn"
 
 [deps]
 
-source_file="res://Assets/Models/Weapons/Katana01/mystical_ember_blade.glb"
-dest_files=["res://.godot/imported/mystical_ember_blade.glb-75578af6ca4bb629fe0f33ec2b835021.scn"]
+source_file="res://Assets/Models/Weapons/BlackKatana/tanjiro_katana_rework.glb"
+dest_files=["res://.godot/imported/tanjiro_katana_rework.glb-c55353975f2ba2b3c198cbc94f3ce2e6.scn"]
 
 [params]
 

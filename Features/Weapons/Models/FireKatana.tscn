@@ -1,16 +1,16 @@
-[gd_scene load_steps=25 format=4 uid="uid://ckietkinj14ns"]
+[gd_scene load_steps=26 format=4 uid="uid://ckietkinj14ns"]
 
-[ext_resource type="Texture2D" uid="uid://demtag4lhyiuh" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_0.png" id="1_7nqeh"]
-[ext_resource type="Texture2D" uid="uid://1uyrx3eppdkp" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_2.png" id="2_oy4kg"]
-[ext_resource type="Texture2D" uid="uid://djpol28b0qymi" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_1.png" id="3_v7pry"]
-[ext_resource type="Texture2D" uid="uid://cuo4quyw51mnk" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_3.png" id="4_fis7u"]
-[ext_resource type="Texture2D" uid="uid://bna5rwhwnya4p" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_5.png" id="5_8cbro"]
-[ext_resource type="Texture2D" uid="uid://wprx5r80amjn" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_7.png" id="6_bfaut"]
-[ext_resource type="Texture2D" uid="uid://ddx7ydmsj6a6x" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_6.png" id="7_627w7"]
-[ext_resource type="Texture2D" uid="uid://b6nvk5a0edjrv" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_8.png" id="8_rf8x5"]
-[ext_resource type="Texture2D" uid="uid://d1b5271fesl0a" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_10.png" id="9_1xhud"]
-[ext_resource type="Texture2D" uid="uid://br477yiod4b13" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_11.png" id="10_vvbxi"]
-[ext_resource type="Texture2D" uid="uid://nfy1814ictvv" path="res://Assets/Models/Weapons/Katana01/mystical_ember_blade_12.png" id="11_vljxh"]
+[ext_resource type="Texture2D" uid="uid://demtag4lhyiuh" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_0.png" id="1_7nqeh"]
+[ext_resource type="Texture2D" uid="uid://1uyrx3eppdkp" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_2.png" id="2_oy4kg"]
+[ext_resource type="Texture2D" uid="uid://djpol28b0qymi" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_1.png" id="3_v7pry"]
+[ext_resource type="Texture2D" uid="uid://cuo4quyw51mnk" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_3.png" id="4_fis7u"]
+[ext_resource type="Texture2D" uid="uid://bna5rwhwnya4p" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_5.png" id="5_8cbro"]
+[ext_resource type="Texture2D" uid="uid://wprx5r80amjn" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_7.png" id="6_bfaut"]
+[ext_resource type="Texture2D" uid="uid://ddx7ydmsj6a6x" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_6.png" id="7_627w7"]
+[ext_resource type="Texture2D" uid="uid://b6nvk5a0edjrv" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_8.png" id="8_rf8x5"]
+[ext_resource type="Texture2D" uid="uid://d1b5271fesl0a" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_10.png" id="9_1xhud"]
+[ext_resource type="Texture2D" uid="uid://br477yiod4b13" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_11.png" id="10_vvbxi"]
+[ext_resource type="Texture2D" uid="uid://nfy1814ictvv" path="res://Assets/Models/Weapons/FireKatana/mystical_ember_blade_12.png" id="11_vljxh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ft2vu"]
 resource_name = "SwordMetal3"
@@ -227,42 +227,51 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e0lua")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_7nqeh"]
+size = Vector3(0.22399902, 0.035186768, 1.2417603)
+
 [node name="FireKatana" type="Node3D"]
 
-[node name="Sketchfab_model" type="Node3D" parent="."]
+[node name="Model" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
 
-[node name="99457f3ec4cf4f4c88159dc315617752_fbx" type="Node3D" parent="Sketchfab_model"]
+[node name="99457f3ec4cf4f4c88159dc315617752_fbx" type="Node3D" parent="Model"]
 transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 
-[node name="RootNode" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx"]
+[node name="RootNode" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx"]
 
-[node name="KatanaHandleModel" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
+[node name="KatanaHandleModel" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
 
-[node name="KatanaHandleModel_SwordMetal3_0" type="MeshInstance3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaHandleModel"]
+[node name="KatanaHandleModel_SwordMetal3_0" type="MeshInstance3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaHandleModel"]
 mesh = SubResource("ArrayMesh_j6i51")
 skeleton = NodePath("")
 
-[node name="KatanaBladeModel" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
+[node name="KatanaBladeModel" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
 
-[node name="KatanaBladeModel_SwordMetal1_0" type="MeshInstance3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaBladeModel"]
+[node name="KatanaBladeModel_SwordMetal1_0" type="MeshInstance3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaBladeModel"]
 mesh = SubResource("ArrayMesh_7cf6t")
 skeleton = NodePath("")
 
-[node name="KatanaBaseModel" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
+[node name="KatanaBaseModel" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
 
-[node name="KatanaBaseModel_SwordMetal1_0" type="MeshInstance3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaBaseModel"]
+[node name="KatanaBaseModel_SwordMetal1_0" type="MeshInstance3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaBaseModel"]
 mesh = SubResource("ArrayMesh_p5q08")
 skeleton = NodePath("")
 
-[node name="KatanaHiltModel" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
+[node name="KatanaHiltModel" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
 
-[node name="KatanaHiltModel_SwordMetal1_0" type="MeshInstance3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaHiltModel"]
+[node name="KatanaHiltModel_SwordMetal1_0" type="MeshInstance3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaHiltModel"]
 mesh = SubResource("ArrayMesh_a5ha7")
 skeleton = NodePath("")
 
-[node name="KatanaGripModel" type="Node3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
+[node name="KatanaGripModel" type="Node3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode"]
 
-[node name="KatanaGripModel_SwordMetal2_0" type="MeshInstance3D" parent="Sketchfab_model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaGripModel"]
+[node name="KatanaGripModel_SwordMetal2_0" type="MeshInstance3D" parent="Model/99457f3ec4cf4f4c88159dc315617752_fbx/RootNode/KatanaGripModel"]
 mesh = SubResource("ArrayMesh_g70ax")
 skeleton = NodePath("")
+
+[node name="Hitbox" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060798287, 0.25187683, -0.8835144)
+shape = SubResource("BoxShape3D_7nqeh")
